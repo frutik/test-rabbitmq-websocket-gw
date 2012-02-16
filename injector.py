@@ -9,10 +9,11 @@ channel = connection.channel()
 channel.exchange_declare(exchange='ucall222',
                          type='direct')
 
-severity = sys.argv[1] if len(sys.argv) > 1 else 'info'
+agent = sys.argv[1] if len(sys.argv) > 1 else '14'
 message = ' '.join(sys.argv[2:]) or 'Hello World!'
+
 channel.basic_publish(exchange='ucall222',
-                      routing_key='14',
-                      body='test')
-print " [x] Sent %r:%r" % (severity, message)
+                      routing_key=agent,
+                      body=message)
+print " [x] Sent %r:%r" % (agent, message)
 connection.close()
