@@ -10,8 +10,6 @@ import time
 
 http_settings = dict(
     cookie_secret=str(uuid.uuid1()),
-    #template_path=os.path.join(os.path.dirname(__file__), "templates"),
-    #static_path=os.path.join(os.path.dirname(__file__), "static"),
     xsrf_cookies=False,
     autoescape="xhtml_escape",
 )
