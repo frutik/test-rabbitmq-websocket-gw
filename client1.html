@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>
+var ws = new WebSocket("ws://localhost:8888/agent/14");
+ws.onopen = function() {
+    ws.send("Hello, world");
+};
+
+ws.onmessage = function (evt) {
+    console.log(evt.data);
+};
+</script>
