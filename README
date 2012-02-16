@@ -1,7 +1,18 @@
 Gateway, which allows to subscribe to a rabbitmq channel via websocket protocol. This implementation is not very generic.
 
+
+Requirements
+
+1. RabbitMQ
+2. Python
+
+Install
+
 1. pip install -r requirements.txt
-2. python tornado-run.py
-3. open client1.html in chrome (or other websocket compatible browser)
-4. execute python injector.py
-5. you should receive message and see it in javascript console
+
+Use
+
+2. Execute python tornado-run.py
+3. Open client1.html in chrome (or other websocket compatible browser)
+4. Execute python injector.py
+5. You should receive message and see it in javascript console
