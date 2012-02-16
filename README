@@ -16,3 +16,7 @@ Use
 3. Open client1.html in chrome (or other websocket compatible browser)
 4. Execute python injector.py
 5. You should receive message and see it in javascript console
+
+TODO
+
+- Add stomp layer
